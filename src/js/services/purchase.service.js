@@ -18,5 +18,7 @@ const theMostExpansive = (purchases) => {
     .reduce(mostExpansive);
 };
 
-export const findAll = () => api.get("/");
-export const takeTheMostExpansive = () => findAll().then(theMostExpansive);
+const findAll = () => api.get("/");
+const takeTheMostExpansive = () => findAll().then(theMostExpansive);
+
+export { findAll, takeTheMostExpansive };
